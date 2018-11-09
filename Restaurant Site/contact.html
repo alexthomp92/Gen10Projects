@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+Name: Alex Thompson
+Date Created: 10/31/18
+Most Recent Revision: 11/4/18-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale1, shrink-to-fit=no">
+<title> Contact Us</title>
+<script type="text/Javascript" src="scripts/restaurantScriptsV2.js"></script>
+<link href="styles/restaurantstyles.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<style>
+	.content {
+		text-align: center;
+		}
+	.choices {
+		display: block;
+		}
+	.bold {
+		font-weight: bold;
+		}
+</style>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+	<Header><h1>Jack's Diner</h1></Header>
+	<hr />
+	<p><a href="home.html"><i class="fas fa-home"></i>Home</a>
+		<a href="menu.html"> Menu</a>
+		<a href="contact.html"> Contact Us</a>
+	<hr />
+	
+		<div class="content"><p><form name="contactForm" action="contact.html" onsubmit="return validateForm()" method ="post">
+			<div class="bold">
+			<label for="name">Name:</label>
+			<input type="text" name="fname" id="name" />
+		</p></div>
+		<p>
+			<div class="bold">
+				<label for="email">Email:</label>
+				<input type="text" name="femail" id="email" />
+		</p></div>
+		<p>
+		<div class="bold">
+			<label for="phone">Phone:</label>
+			<input type="text" name="fphone" id="phone" />
+		</p></div>
+		<p>
+		<div class="bold">Reason for Inquiry: <select name="Catering" id="inquiry">
+			<option value="Catering">Catering</option>
+			<option value="Private Party">Private Party</option>
+			<option value="Feedback">Feedback</option>
+			<option value="Other">Other</option>
+			</select></p></div>
+		<p><div class="bold">Additional Information:<textarea name="finput" id="additional"></textarea></p></div>
+		<p>
+		<div class="choices"><div class="bold">Have you been to the restaurant?
+			<input type="radio" name="yesno" value="Yes" />Yes
+			<input type="radio" name="yesno" value="No" />No</div>
+		</p></div>
+		<p>
+			<div class="choices"><div class="bold">Best days to contact you:
+			<input type="checkbox" name="Days" value="M"  />M
+			<input type="checkbox" name="Days" value="T" />T
+			<input type="checkbox" name="Days" value="W" />W
+			<input type="checkbox" name="Days" value="Th" />Th
+			<input type="checkbox" name="Days" value="F" />F</div></div>
+		</p>
+		<p>
+		<div class="bold"><input type="submit" value="Send Request" /><br /></div></form>
+		
+		
+	<hr />
+	<footer>
+		<p>675 Sunset Drive Oceanside, Florida 76467</p>
+		<p>Phone: (000) 867-5309</p>
+	</footer>
+	
+	<div style="clear:both"></div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
